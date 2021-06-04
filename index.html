@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Typer</title>
+  </head>
+  <body>
+    <div class="level-wrap">
+      <label for="level-select">Difficulty</label>
+      <select name="level" id="level-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+
+    <div class="on-game game-board">
+      <div class="game-title">
+        <h1>Speed Typer</h1>
+      </div>
+      <div class="timeNscore">
+        <h4>Time left:<span class="clock">10s</span></h4>
+        <h4>Score:<span class="score">0</span></h4>
+      </div>
+      <div class="main">
+        <h4>Type the following</h4>
+        <div class="word">Sigh</div>
+        <input type="text" placeholder="Type the word here..." class="typing" />
+      </div>
+    </div>
+    <div class="out-game game-board">
+      <h1>Time Ran Out</h1>
+      <h4>Your Final Score is <span class="result">0</span></h4>
+      <button class="reGame">Reload</button>
+    </div>
+
+    <button class="toggle">
+      <i class="fas fa-cog fa-x"></i>
+    </button>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

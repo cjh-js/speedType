@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(44, 62, 80);
+  color: white;
+}
+
+.level-wrap {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: rgb(31, 43, 56);
+  transition: all 0.5s ease-in-out;
+}
+
+.level-wrap label {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+#level-select {
+  background: #a7c5e3;
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#level-select:focus {
+  outline: none;
+}
+
+.game-board {
+  width: 500px;
+  height: 250px;
+  background: rgb(52, 73, 94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.game-title {
+  background: #243342;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.on-game h1 {
+  margin-bottom: 10px;
+}
+
+.on-game .timeNscore {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main input {
+  padding: 10px;
+  font-size: 15px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.main .word {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.out-game {
+  justify-content: center;
+  display: none;
+}
+
+.out-game h1 {
+  margin-bottom: 20px;
+}
+
+.out-game h4 {
+  margin-bottom: 20px;
+}
+
+.toggle {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 17px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle:active {
+  transform: scale(0.98);
+}
+
+.level-wrap.showing {
+  transform: translateY(-100%);
+}
+.on-game.hide {
+  display: none;
+}
+
+.out-game.show {
+  display: flex;
+}
+
+.reGame {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.reGame:focus {
+  outline: none;
+}
+
+.reGame:active {
+  transform: scale(0.98);
+}
